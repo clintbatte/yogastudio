@@ -1,0 +1,2 @@
+module YogaclassHelper
+end

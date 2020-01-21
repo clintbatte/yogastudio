@@ -1,3 +1,51 @@
 // Place all the styles related to the yogaclass controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// Place all the styles related to the studios controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+body {
+  background: image_url("goodvibes.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+h1 {
+  font-family: 'ralewaysemibold', sans-serif;
+  font-weight: normal;
+  color: #dddddd;
+  font-size: 15.5vw;
+  letter-spacing: -.5px;
+  text-align: center;
+  // margin-bottom: 0px;
+  // padding: 35px 10px 0px 10px;
+  margin-top: 10%;
+  padding: 0;
+  text-shadow: rgba(0, 0, 0, 0.95) 3px 5px;
+}
+
+h2 {
+  font-family: 'ralewaythin', sans-serif;
+  font-weight: normal;
+  letter-spacing: -.25px;
+  color: #dddddd;
+  padding: 1px 8px;
+  font-size: 10.5vw;
+  text-align: center;
+  margin-top:-4%;
+  text-shadow: rgba(0, 0, 0, 0.95) 3px 5px;
+}
+
+.title-container {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 15%;
+  margin: 0 -10px;
+}

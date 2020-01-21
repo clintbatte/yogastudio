@@ -1,4 +1,9 @@
 class Yogaclass < ApplicationRecord
+  belongs_to :user
+  has_many :comments
+
+  validates :name, presence: true
+
   def change
     create_table :yogaclass do |t|
       t.string :name

@@ -17,14 +17,16 @@
           </button>
           <h4 class="modal-title" id="myModalLabel">Add a comment</h4>
         </div>
-        <%= simple_form_for @comment, url: yogaclass_comments_path(@yogaclass) do |f| %>
+        <%= simple_form_for @yogaclass do |f| %>
           <div class="modal-body">
-            <%= f.input :message %>
-            <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
+            <%= f.input :name %>
+            <%= f.input :description%>
+            <%= f.input :time %>
+            <%= f.input :teacher %>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <%= f.submit "Add a comment", class: 'btn btn-primary' %>
+            <%= f.submit "Add a class", class: 'btn btn-primary' %>
           </div>
         <% end %>
       </div>
@@ -32,15 +34,3 @@
   </div>
 </div>
 
-<%# @yogaclass.comments.each do |comment| %>
-<!--  <div>-->
-<!--    <blockquote>-->
-      <%# if comment.humanized_rating.present? %>
-<!--        <b><%#= comment.humanized_rating %></b>-->
-      <%# end %>
-<!--      <b><%#= comment.rating %></b> --->
-      <%#= comment.message %>
-<!--      <small><%#= comment.user.email %></small>-->
-<!--    </blockquote>-->
-<!--  </div>-->
-<%# end %>

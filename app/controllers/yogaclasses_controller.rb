@@ -1,6 +1,7 @@
-class YogaclassController < ApplicationController
+class YogaclassesController < ApplicationController
   def index
-    @yogaclass = Yogaclass.all
+    #@yogaclasses = Yogaclass.all
+    @yogaclass = Yogaclass.new
   end
 
   def new
